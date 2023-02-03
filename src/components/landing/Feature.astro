@@ -1,0 +1,14 @@
+---
+import features from "../../config/features.json"
+---
+
+<h1 class="text-center text-5xl font-bold mt-10">Feature</h1>
+
+<div class="grid md:grid-cols-3 gap-4 p-4">
+    {features.map(value => (
+        <div class="bg-slate-800 p-10 rounded-xl">
+            <h2 class="text-2xl font-bold my-4">{value.title}</h2>
+            <p>{value.descripction}</p>
+        </div>
+    ))}
+</div>
